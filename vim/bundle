@@ -11,26 +11,26 @@ Plugin 'gmarik/Vundle.vim'
 
 " Edit {{{
 
-"コメント
-Plugin 'tomtom/tcomment_vim'
+  "コメント
+  Plugin 'tomtom/tcomment_vim'
 
 
-" vimからGit操作する
-Plugin 'tpope/vim-fugitive'
+  " vimからGit操作する
+  Plugin 'tpope/vim-fugitive'
 
-" vim上でgit diff表示
-"NeoBundle 'airblade/vim-gitgutter'
+  " vim上でgit diff表示
+  "NeoBundle 'airblade/vim-gitgutter'
 
-" ステータスラインをカッコよくする
-"NeoBundle 'Lokaltog/vim-powerline'
-"Plugin 'itchyny/lightline.vim'
-Plugin 'bling/vim-airline'
+  " ステータスラインをカッコよくする
+  "NeoBundle 'Lokaltog/vim-powerline'
+  "Plugin 'itchyny/lightline.vim'
+  Plugin 'bling/vim-airline'
 
 " }}}
 
 " ColorSchema{{{{
 
-Plugin 'muquu/molokai'
+  Plugin 'muquu/molokai'
 
 " }}}
 

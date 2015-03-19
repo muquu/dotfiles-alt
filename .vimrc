@@ -1,7 +1,7 @@
 " NeoBundle.vimで管理してるpluginを読み込む
-source ~/dotvimrc/bundle
+source ~/dotfiles/vim/bundle
 " 基本設定
-source ~/dotvimrc/basic
+source ~/dotfiles/vim/basic
 " StatusLine設定
 source ~/dotfiles/vim/statusline
 " インデント設定
@@ -26,6 +26,8 @@ source ~/dotfiles/vim/encoding
 source ~/dotfiles/vim/misc
 " プラグインに依存するアレ
 "source ~/dotfiles/vim/plugins_setting
+" fcitx インプットメソッドの設定
+source ~/dotfiles/vim/im_setting
 " GVim設定
 if has('gui_running')
   source ~/dotfiles/.gvimrc
