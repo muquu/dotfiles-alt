@@ -6,7 +6,7 @@
 *~
 .DS_Store
 *.sw[po]
-tags
+#tags
 TAGS
 Session.vim
 .svn

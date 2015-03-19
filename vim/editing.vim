@@ -78,8 +78,8 @@ inoremap <expr> ,df strftime('%Y/%m/%d %H:%M:%S')
 inoremap <expr> ,dd strftime('%Y/%m/%d')
 inoremap <expr> ,dt strftime('%H:%M:%S')
 
-" foldは各FiltTypeにお任せる
-" set foldmethod=syntax
+" foldは自分で指定
+set foldmethod=marker
 " 折りたたみは全て展開した状態で開始する
 " set foldlevelstart=99
 " .vimはmarker

@@ -21,19 +21,26 @@ Plugin 'gmarik/Vundle.vim'
   " vim上でgit diff表示
   "NeoBundle 'airblade/vim-gitgutter'
 
-  " ステータスラインをカッコよくする
-  "NeoBundle 'Lokaltog/vim-powerline'
-  "Plugin 'itchyny/lightline.vim'
-  Plugin 'bling/vim-airline'
 
 " }}}
 
-" ColorSchema{{{{
+" Filer {{{
 
+" }}}
+
+" Appearance {{{
+
+  " カラースキーマ
   Plugin 'muquu/molokai'
+
+  " ステータスラインをカッコよくする
+  "Plugin 'Lokaltog/vim-powerline'
+  "Plugin 'itchyny/lightline.vim'
+  Plugin 'bling/vim-airline'
 
 " }}}
 
 call vundle#end()
 filetype plugin indent on
 
+" vim:set foldmethod=maker:
