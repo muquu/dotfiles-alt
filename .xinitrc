@@ -22,10 +22,10 @@ fi
 # uim-xim &
 
 # fcitx
-# export GTK_IM_MODULE=uim
-# export QT_IM_MODULE=uim
-# export XMODIFIERS="@im=uim"
-# uim-xim &
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+export DefaultIMModule=fcitx
 
 # rxvt-unicode daemon
 [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
@@ -38,7 +38,7 @@ fi
 #exec xmonad
 #exec awesome
 #exec i3
-#exec cinnamon-session
+exec cinnamon-session
 #exec mate-session
 #exec openbox-session
 #exec startlxqt
