@@ -20,6 +20,7 @@ fi
 # export QT_IM_MODULE=uim
 # export XMODIFIERS="@im=uim"
 # uim-xim &
+# uim-toolbar-gtk-systray &
 
 # fcitx
 export GTK_IM_MODULE=fcitx
