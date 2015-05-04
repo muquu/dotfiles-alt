@@ -33,9 +33,9 @@ export XMODIFIERS="@im=fcitx"
 #urxvt256c-mld -q -f -o &
 
 # Start WM
-exec startxfce4
+#exec startxfce4
 #exec startlxde
-#exec startkde
+exec startkde
 #exec xmonad
 #exec awesome
 #exec i3
