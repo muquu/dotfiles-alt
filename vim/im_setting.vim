@@ -21,7 +21,7 @@ function! Fcitx2zh()
 endfunction
 
 set ttimeoutlen=150
-"退出插入模式
+" 挿入モードを抜けるときに半角英数にする
 autocmd InsertLeave * call Fcitx2en()
-"进入插入模式
-autocmd InsertEnter * call Fcitx2zh()
+" 挿入モードに切り替えた時全角かなにする
+"autocmd InsertEnter * call Fcitx2zh()
