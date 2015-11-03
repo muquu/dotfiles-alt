@@ -190,10 +190,12 @@
 # alias cd=cd_func
 
 alias ls='ls --color=auto'
-alias ll='ls -l'
+alias ll='ls -lh'
 alias la='ls -a'
-alias lla='ll -a'
+alias lla='ll -ah'
 
 alias vi='vim'
 alias gvi='gvim &'
+
+[ -f ~/.bashrc.local ] && source ~/.bashrc.local
 
