@@ -189,6 +189,8 @@
 #
 # alias cd=cd_func
 
+[ -f ~/.bashrc.local ] && source ~/.bashrc.local
+
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -a'
@@ -197,5 +199,7 @@ alias lla='ll -ah'
 alias vi='vim'
 alias gvi='gvim &'
 
-[ -f ~/.bashrc.local ] && source ~/.bashrc.local
-
+alias em='emacs &'
+function emc(){
+  emacsclient $1 &
+}
