@@ -1,38 +1,38 @@
-" NeoBundle.vimで管理してるpluginを読み込む
-source ~/dotvimrc/vim/bundle.vim
+" Vundle.vimで管理してるpluginを読み込む
+source ~/dotfiles/vim/bundle.vim
 " 基本設定
-source ~/dotvimrc/vim/basic.vim
+source ~/dotfiles/vim/basic.vim
 " StatusLine設定
-source ~/dotvimrc/vim/statusline.vim
+source ~/dotfiles/vim/statusline.vim
 " インデント設定
-source ~/dotvimrc/vim/indent.vim
+source ~/dotfiles/vim/indent.vim
 " 表示関連
-source ~/dotvimrc/vim/apperance.vim
+source ~/dotfiles/vim/apperance.vim
 " " 補完関連
-source ~/dotvimrc/vim/completion.vim
+source ~/dotfiles/vim/completion.vim
 " Tags関連
-source ~/dotvimrc/vim/tags.vim
+source ~/dotfiles/vim/tags.vim
 " 検索関連
-source ~/dotvimrc/vim/search.vim
+source ~/dotfiles/vim/search.vim
 " 移動関連
-source ~/dotvimrc/vim/moving.vim
+source ~/dotfiles/vim/moving.vim
 " Color関連
-source ~/dotvimrc/vim/colors.vim
+source ~/dotfiles/vim/colors.vim
 " 編集関連
-source ~/dotvimrc/vim/editing.vim
+source ~/dotfiles/vim/editing.vim
 " エンコーディング関連
-source ~/dotvimrc/vim/encoding.vim
+source ~/dotfiles/vim/encoding.vim
 " fcitx インプットメソッドの設定
 if has('unix')
-  source ~/dotvimrc/vim/im_setting.vim
+  source ~/dotfiles/vim/im_setting.vim
 endif
 " GVim設定
 if has('gui_running')
-  source ~/dotvimrc/gvimrc
+  source ~/dotfiles/gvimrc
 endif
 
 " プラグイン設定
-source ~/dotvimrc/plugin.vim
+source ~/dotfiles/plugin.vim
 
 " ローカル設定
 if filereadable(expand('~/.vimrc.local'))
