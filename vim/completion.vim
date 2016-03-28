@@ -13,10 +13,3 @@ cnoremap <C-p> <Up>
 cnoremap <Up>  <C-p>
 cnoremap <C-n> <Down>
 cnoremap <Down>  <C-n>
-
-" 補完にneocomplcacheを使う
-source ~/dotfiles/.vimrc.completion.neocomplcache
-
-" 補完にAutoComplPopを使う
-" source ~/dotfiles/.vimrc.completion.autocomplpop
-

@@ -1,17 +1,21 @@
 "-------------------------------------------------------------------------------
 " カラー関連 Colors
 "-------------------------------------------------------------------------------
-
-""colorscheme jellybeans
-""colorscheme wombat
-""colorscheme railscasts
-""colorscheme solarized
-colorscheme molokai
-
+" ハイライト on
+syntax enable
 
 set t_Co=256
 set t_Sf=[3%dm
 set t_Sb=[4%dm
+
+""colorscheme jellybeans
+""colorscheme wombat
+""colorscheme railscasts
+" set background=dark
+" let g:solarized_termcolors=256
+" colorscheme solarized
+colorscheme molokai
+
 
 " ターミナルタイプによるカラー設定
 " if &term =~ "xterm-256color" || "screen-256color"
@@ -34,8 +38,6 @@ set t_Sb=[4%dm
 " hi PmenuSel guibg=#8cd0d3 guifg=#666666
 " hi PmenuSbar guibg=#333333
 
-" ハイライト on
-syntax enable
 " 補完候補の色づけ for vim7
 hi Pmenu ctermbg=255 ctermfg=0 guifg=#000000 guibg=#999999
 " hi PmenuSel ctermbg=blue ctermfg=black

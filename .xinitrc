@@ -26,7 +26,7 @@ fi
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
-#export DefaultIMModule=fcitx
+export DefaultIMModule=fcitx
 
 # rxvt-unicode daemon
 [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
@@ -35,11 +35,11 @@ export XMODIFIERS="@im=fcitx"
 # Start WM
 #exec startxfce4
 #exec startlxde
-#exec startkde
+exec startkde
 #exec xmonad
 #exec awesome
 #exec i3
-exec cinnamon-session
+#exec cinnamon-session
 #exec mate-session
 #exec openbox-session
 #exec startlxqt

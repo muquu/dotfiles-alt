@@ -2,6 +2,7 @@
 " 基本設定 Basics
 "-------------------------------------------------------------------------------
 let mapleader = ","              " キーマップリーダー
+noremap \ ,                      " ','のデフォルトの機能は'\'で使えるように退避
 set scrolloff=5                  " スクロール時の余白確保
 set textwidth=0                  " 一行に長い文章を書いていても自動折り返しをしない
 set nobackup                     " バックアップ取らない
@@ -17,6 +18,7 @@ set showcmd                      " コマンドをステータス行に表示
 set showmode                     " 現在のモードを表示
 set viminfo='50,<1000,s100,\"50  " viminfoファイルの設定
 set modelines=0                  " モードラインは無効
+set noundofile
 
 " OSのクリップボードを使用する
 set clipboard=unnamedplus,autoselect

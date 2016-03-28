@@ -37,6 +37,7 @@ Plugin 'gmarik/Vundle.vim'
   "Plugin 'Lokaltog/vim-powerline'
   "Plugin 'itchyny/lightline.vim'
   Plugin 'bling/vim-airline'
+	Plugin 'vim-airline/vim-airline-themes'
 
 " }}}
 

@@ -4,20 +4,53 @@ set t_Co=256
 "" 全角記号
 set ambiwidth=double
 "" フォント""
-set guifont=Ricty\ 12
+"set guifont=Ricty\ 12
 "" カーソル点滅
 set guicursor=a:blinkon0
 "" ビープ音(消す)
 set vb t_vb=
-set novb
-"" カラーテーマ
-colorscheme molokai
+"set novb
+"" ツールバー非表示
+set guioptions-=T
+"" 左右のスクロールバー非表示
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
+"" 水平スクロールバー非表示
+set guioptions-=b
+"" メニューバー非表示
+set guioptions-=m
+"" カラースキーム
+"" wombat
+"colorscheme wombat
+"" molokai
+"colorscheme molokai
+"" solarized
+set background=dark
+let g:solarized_italic=0
+colorscheme solarized
+
+if has('unix')
+  set novb
+  set guifont=Ricty\ for\ Powerline\ 12
+endif
 
 if has('win32')
-  set guifont=Inconsolata:h12:cANSI
+  "set ffs=dos
+  "set nolist
+  " アンチエイリアスフォント
+  "set guifont=Ubuntu_Mono_for_Powerline:h12:cANSI
+  "set guifont=Anonymous_Pro_for_Powerline:h11:cANSI
+  "set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
+  "set guifontwide=MeiryoKe_Console:h12:cANSI
+  " ビットマップフォント
+  set guifont=ProggyClean:h8:cANSI
+  set guifontwide=ＭＳ_ゴシック:h10:cANSI
   source $VIMRUNTIME/delmenu.vim
   set langmenu=ja_jp.utf-8
   source $VIMRUNTIME/menu.vim
+  let g:airline_powerline_fonts = 1
 endif
 
 
@@ -41,7 +74,7 @@ function! GuiTabLabel()
     let l:label .= '[' . l:wincount . ']'
   endif
 
-  " このタブページに変更のあるバッファがるときには '[+]' を追加します(デフォルトで一応あるので)
+  " このタブページに変更のあるバッファがあるときには '[+]' を追加します(デフォルトで一応あるので)
   for bufnr in l:bufnrlist
     if getbufvar(bufnr, "&modified")
       let l:label .= '[+]'
