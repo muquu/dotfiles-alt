@@ -189,17 +189,31 @@
 #
 # alias cd=cd_func
 
+
+## alias設定
+#
+[ -f ~/dotfiles/.bashrc.alias ] && source ~/dotfiles/.bashrc.alias
+
+case "${OSTYPE}" in
+# Mac(Unix)
+msys*)
+    # ここに設定
+    [ -f ~/dotfiles/.bashrc.msys ] && source ~/dotfiles/.bashrc.msys
+    ;;
+# Linux
+linux*)
+    # ここに設定
+    [ -f ~/dotfiles/.bashrc.linux ] && source ~/dotfiles/.bashrc.linux
+    ;;
+# Windows(Cygwin)
+cygwin*)
+    # ここに設定
+    [ -f ~/dotfiles/.bashrc.cygwin ] && source ~/dotfiles/.bashrc.cygwin
+    ;;
+esac
+
+
+## local固有設定
 [ -f ~/.bashrc.local ] && source ~/.bashrc.local
 
-alias ls='ls --color=auto'
-alias ll='ls -lh'
-alias la='ls -a'
-alias lla='ll -ah'
 
-alias vi='vim'
-alias gvi='gvim &'
-
-alias em='emacs &'
-function emc(){
-  emacsclient $1 &
-}
