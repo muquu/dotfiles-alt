@@ -5,7 +5,7 @@ mkdir -p $HOME/.config/fontconfig
 ln -sb $HOME/dotfiles/fontconfig/fonts.conf $HOME/.config/fontconfig/fonts.conf
 
 #DOT_FILES=( .zsh .zshrc .zshrc.alias .zshrc.linux .gitconfig .vimrc .Xresources .Xmodmap )
-DOT_FILES=( zsh .zshrc .zshrc.alias .zshrc.linux .gitconfig )
+DOT_FILES=( zsh .zshrc .zshrc.alias .zshrc.linux .gitconfig .vimrc )
 
 for file in ${DOT_FILES[@]}
 do
@@ -15,5 +15,5 @@ do
     ln -sb $HOME/dotfiles/$file $HOME/$file
 done
 
-#git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-#vim -c "PluginInstall" -c q
+git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+vim -c "PluginInstall" -c q
