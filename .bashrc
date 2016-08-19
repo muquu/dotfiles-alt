@@ -117,6 +117,10 @@ fi
 # LANG
 #
 export LANG=en_US.UTF-8
+#
+# vi keybind
+#
+set -o vi
 
 #
 # Prompt Colors
