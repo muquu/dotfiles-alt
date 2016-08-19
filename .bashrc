@@ -121,6 +121,10 @@ export LANG=en_US.UTF-8
 # vi keybind
 #
 set -o vi
+#
+# Default Editor
+#
+export EDITOR=vim
 
 #
 # Prompt Colors
