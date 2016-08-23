@@ -4,5 +4,5 @@
 [push]
 	default = matching
 [core]
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
